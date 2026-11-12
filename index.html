@@ -1,0 +1,639 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Manis Lumer | Sweet Moments, Sweet Memories</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header class="navbar">
+    <div class="nav-container">
+        <a href="#home" class="logo">
+            <span class="logo-icon">✿</span>
+            <span>manis<span class="logo-accent">lumer.</span></span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#promo">Promo</a>
+            <a href="#racik">Custom Dessert</a>
+            <a href="#about">About Us</a>
+        </nav>
+    </div>
+</header>
+
+
+<main>
+<section class="hero" id="home">
+    <div class="hero-content">
+        <span class="eyebrow">
+            ✦ A LITTLE SWEETNESS EVERY DAY ✦
+        </span>
+
+        <h1>
+            Sweet Moments,<br>
+            <span>Sweet Memories.</span>
+        </h1>
+
+        <p>
+            Temukan kebahagiaan dalam setiap gigitan.
+            Dessert lezat yang dibuat dengan cinta,
+            khusus untuk menemani hari-harimu.
+        </p>
+
+        <div class="hero-buttons">
+            <button type="button" class="btn-primary" onclick="document.getElementById('myModal1').showModal()">Order Now</button>
+
+            <a href="#menu" class="btn-secondary">
+                Explore Menu <span>→</span>
+            </a>
+        </div>
+
+        <div class="hero-note">
+            <span>♡</span>
+            Made fresh, served with love.
+        </div>
+    </div>
+
+
+    <div class="hero-visual">
+        <div class="hero-decoration decoration-one">✦</div>
+        <div class="hero-decoration decoration-two">♡</div>
+        <div class="hero-decoration decoration-three">✧</div>
+
+        <div class="hero-dessert">
+            <img src="Group 1.png" alt="">
+        </div>
+    </div>
+
+</section>
+
+<dialog id="myModal1" class="popup-box1" id="order-form">
+    <div class="form">
+        <p class="judul-form"><u>Data Pesanan</u></p>
+
+        <div class="kategori-group">
+            <p>Pesanan</p>
+            <label class="btn-option">
+                <input type="radio" name="pesanan" value="DCS">
+                <span>Donat Cokelat Sprinkle</span>
+            </label>
+            <label class="btn-option">
+                <input type="radio" name="pesanan" value="EKCO">
+                <span>Es Krim Cokelat Oreo</span>
+            </label>
+            <label class="btn-option">
+                <input type="radio" name="pesanan" value="EKVS">
+                <span>Es Krim Vanilla Sprinkle</span>
+            </label>
+            <label class="btn-option">
+                <input type="radio" name="pesanan" value="Racikanku">
+                <span>Racikanku</span>
+            </label>
+        </div>
+
+        <div class="kategori-group">
+            <p>Jumlah</p>
+            <label class="btn-option">
+                <input type="radio" name="jumlah" value="1">
+                <span>1</span>
+            </label>
+            <label class="btn-option">
+                <input type="radio" name="jumlah" value="2">
+                <span>2</span>
+            </label>
+            <label class="btn-option">
+                <input type="radio" name="jumlah" value="3">
+                <span>3</span>
+            </label>
+            <label class="btn-option">
+                <input type="radio" name="jumlah" value="6">
+                <span>6</span>
+            </label>
+        </div>
+
+        <p class="q3">Penerima</p>
+        <div class="nama-nomor">
+            <input type="text" class="nama-pelanggan" placeholder="Nama" required>
+            <input type="text" class="nomor-pelanggan" placeholder="Nomor WhatsApp" required>
+        </div>
+        <input type="text" class="alamat-pelanggan" placeholder="Alamat Pengantaran" required>
+        <div class="closing">
+            <button type="submit" onclick="document.getElementById('myModal1').close(); document.getElementById('myModal2').showModal()">Kirim Pesanan</button>
+            <form method="dialog">
+                <button type="submit">Tutup</button> 
+            </form>
+        </div>
+    </div>
+</dialog>
+
+<dialog id="myModal2" class="popup-box2">
+    <div class="form-sent">
+        <p class="order-sent"><u>Pesanan Diterima</u></p>
+        <p class="thanks-note">Terima kasih! Pesanan akan segera diantarkan ke alamat Anda.</p>
+        <form method="dialog">
+            <button>Kembali ke menu</button> 
+        </form>
+    </div>
+</dialog>
+
+<section class="promo-section" id="promo">
+    <div class="section-heading">
+        <span class="eyebrow">✦ SPECIAL FOR YOU ✦</span>
+        <h2>Promo Hari Ini</h2>
+    </div>
+
+    <div class="promo-grid">
+        <article class="promo-card promo-pink">
+            <span class="promo-label">BEST DEAL</span>
+            <div class="promo-img">
+                <img src="3donuts.png" alt="">
+            </div>
+            <div class="promo-info">
+                <span class="promo-subtitle">SWEET COMBO</span>
+                <h3>Donut Lover</h3>
+                <p>3 donat pilihan dengan topping favoritmu.</p>
+
+                <div class="price">
+                    <strong>Rp25.000</strong>
+                    <del>Rp32.000</del>
+                </div>
+
+                <button type="button" class="promo-link" onclick="document.getElementById('myModal1').showModal()">Order <span>→</span></button>
+            </div>
+        </article>
+
+        <article class="promo-card promo-purple">
+            <span class="promo-label">FAN FAVORITE</span>
+            <div class="promo-img">
+                <img src="2icecreams.png" alt="">
+            </div>
+            <div class="promo-info">
+                <span class="promo-subtitle">HAPPY TREAT</span>
+                <h3>Ice Cream Duo</h3>
+                <p>2 Scoop es krim dengan rasa pilihanmu.</p>
+
+                <div class="price">
+                    <strong>Rp20.000</strong>
+                    <del>Rp26.000</del>
+                </div>
+
+                <button type="button" class="promo-link" onclick="document.getElementById('myModal1').showModal()">Order <span>→</span></button>
+            </div>
+        </article>
+
+        <article class="promo-card promo-yellow">
+            <span class="promo-label">SPECIAL COMBO</span>
+            <div class="promo-img">
+                <img src="cupcakes.png" alt="">
+            </div>
+            <div class="promo-info">
+                <span class="promo-subtitle">SWEET BOX</span>
+                <h3>Little Happiness</h3>
+                <p>Donat, cupcake, dan dessert pilihan.</p>
+
+                <div class="price">
+                    <strong>Rp35.000</strong>
+                    <del>Rp42.000</del>
+                </div>
+
+                <button type="button" class="promo-link" onclick="document.getElementById('myModal1').showModal()">Order <span>→</span></button>
+            </div>
+        </article>
+    </div>
+</section>
+
+<section class="menu-section" id="menu">
+    <div class="section-heading">
+        <span class="eyebrow">♡ MADE WITH LOVE ♡</span>
+        <h2>Favorit Pelanggan</h2>
+        <p>Kenali dessert yang selalu berhasil mencuri hati.</p>
+    </div>
+
+    <div class="menu-grid">
+        <article class="product-card">
+            <div class="product-image product-one">
+                <span class="product-badge">BEST SELLER</span>
+                <span class="product-img">
+                    <img src="image 10.png" alt="">
+                </span>
+                <span class="product-heart">♡</span>
+            </div>
+
+            <div class="product-info">
+                <span class="product-category">DONUTS</span>
+                <h3>Choco Glaze Donut</h3>
+                <p>Donat lembut dengan lapisan cokelat manis.</p>
+
+                <div class="product-bottom">
+                    <strong>Rp12.000</strong>
+                    <button type="button" class="promo-link" onclick="document.getElementById('myModal1').showModal()">+</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="product-card">
+            <div class="product-image product-two">
+                <span class="product-badge">POPULAR</span>
+                <span class="product-img">
+                    <img src="strawberry-icecream.png" alt="">
+                </span>
+                <span class="product-heart">♡</span>
+            </div>
+
+            <div class="product-info">
+                <span class="product-category">ICE CREAM</span>
+                <h3>Strawberry Bliss</h3>
+                <p>Es krim stroberi yang creamy dan menyegarkan.</p>
+
+                <div class="product-bottom">
+                    <strong>Rp15.000</strong>
+                    <button type="button" class="promo-link" onclick="document.getElementById('myModal1').showModal()">+</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="product-card">
+            <div class="product-image product-three">
+                <span class="product-badge">MUST TRY</span>
+                <span class="product-img">
+                    <img src="vanilla-cupcake.png" alt="">
+                </span>
+                <span class="product-heart">♡</span>
+            </div>
+
+            <div class="product-info">
+                <span class="product-category">CUPCAKES</span>
+                <h3>Vanilla Cupcake</h3>
+                <p>Vanilla cupcake dengan cream yang lembut.</p>
+
+                <div class="product-bottom">
+                    <strong>Rp10.000</strong>
+                    <button type="button" class="promo-link" onclick="document.getElementById('myModal1').showModal()">+</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="product-card">
+            <div class="product-image product-four">
+                <span class="product-badge">NEW</span>
+                <span class="product-img">
+                    <img src="berry-cheesecake.png" alt="">
+                </span>
+                <span class="product-heart">♡</span>
+            </div>
+
+            <div class="product-info">
+                <span class="product-category">CAKES</span>
+                <h3>Berry Cheesecake</h3>
+                <p>Cheesecake creamy dengan sentuhan berry.</p>
+
+                <div class="product-bottom">
+                    <strong>Rp18.000</strong>
+                    <button type="button" class="promo-link" onclick="document.getElementById('myModal1').showModal()">+</button>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <div class="menu-more">
+        <a href="#racik" class="btn-secondary"> Create Your Own Dessert →</a>
+    </div>
+</section>
+
+<section class="custom-dessert" id="racik">
+    <div class="section-heading">
+        <span class="eyebrow">✧ CREATE YOUR OWN SWEETNESS ✧</span>
+        <h2>Racik Dessert-mu Sendiri</h2>
+        <p>Pilih favoritmu dan buat dessert impianmu!</p>
+    </div>
+
+    <form class="dessert-customizer">
+        <!-- BASE OPTIONS -->
+        <input type="radio" name="base" id="base-donut" checked>
+        <input type="radio" name="base" id="base-ice">
+        <input type="radio" name="base" id="base-cupcake">
+
+        <!-- FLAVOR OPTIONS -->
+        <input type="radio" name="flavor" id="flavor-choco" checked>
+        <input type="radio" name="flavor" id="flavor-vanilla">
+        <input type="radio" name="flavor" id="flavor-strawberry">
+
+        <!-- TOPPING OPTIONS -->
+        <input type="radio" name="topping" id="top-sprinkle" checked>
+        <input type="radio" name="topping" id="top-oreo">
+        <input type="radio" name="topping" id="top-peanut">
+
+        <div class="custom-layout">
+            <div class="preview-card">
+                <span class="preview-tag">YOUR CREATION</span>
+                <div class="dessert-visual">
+                    <div class="dessert-circle"></div>
+
+                    <div class="dessert-img">
+                        <span class="donut-img">
+                            <img src="donut-base.png" alt="">
+                        </span>
+                        <span class="ice-img">
+                            <img src="icecream-base.png" alt="">
+                        </span>
+                        <span class="cupcake-img">
+                            <img src="cupcake-base.png" alt="">
+                        </span>
+                    </div>
+
+                    <div class="topping-decoration">
+                        <span class="sprinkle-top">✨</span>
+                        <span class="oreo-top">🍪</span>
+                        <span class="peanut-top">🥜</span>
+                    </div>
+                </div>
+
+                <h3>My Sweet Dessert</h3>
+                <p>A little sweetness made by you.</p>
+
+                <div class="preview-caption">
+                    ♡ Made with love
+                </div>
+            </div>
+
+            <div class="custom-options">
+                <div class="option-group">
+                    <div class="option-title">
+                        <span>01</span>
+                        <div>
+                            <h3>Pilih Dasar</h3>
+                            <p>Choose your dessert</p>
+                        </div>
+                    </div>
+
+                    <div class="option-list">
+                        <label for="base-donut">Donat</label>
+                        <label for="base-ice">Es Krim</label>
+                        <label for="base-cupcake">Cupcake</label>
+                    </div>
+                </div>
+
+                <div class="option-group">
+                    <div class="option-title">
+                        <span>02</span>
+                        <div>
+                            <h3>Pilih Rasa</h3>
+                            <p>Pick your favorite flavor</p>
+                        </div>
+                    </div>
+
+                    <div class="option-list">
+                        <label for="flavor-choco">Cokelat</label>
+                        <label for="flavor-vanilla">Vanilla</label>
+                        <label for="flavor-strawberry">Stroberi</label>
+                    </div>
+                </div>
+
+                <div class="option-group">
+
+                    <div class="option-title">
+                        <span>03</span>
+                        <div>
+                            <h3>Pilih Topping</h3>
+                            <p>Add some extra sweetness</p>
+                        </div>
+                    </div>
+
+                    <div class="option-list">
+                        <label for="top-sprinkle">Sprinkle</label>
+                        <label for="top-oreo">Oreo</label>
+                        <label for="top-peanut">Kacang</label>
+                    </div>
+
+                </div>
+
+                <div class="custom-footer">
+                    <p>Ready for your sweet creation?</p>
+                    <button type="button" class="custom-order-btn" onclick="document.getElementById('myModal1').showModal()">Pesan Racikan →</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</section>
+
+<section class="testimonial-section" id="testimoni">
+    <div class="section-heading">
+        <span class="eyebrow">SWEET WORDS</span>
+        <h2>Kata Mereka</h2>
+    </div>
+
+    <div class="testimonial-grid">
+        <article class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>
+                "Donatnya lembut banget! Cokelatnya juga
+                enak dan nggak terlalu manis. Definitely worth every penny!"
+            </p>
+
+            <div class="customer">
+                <div class="customer-avatar avatar-one">A</div>
+                <div>
+                    <strong>Anna</strong>
+                    <span>Donut Lover</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>
+                "Packaging-nya lucu banget, rasanya juga
+                enak. Cocok banget buat sweet treat!"
+            </p>
+            <div class="customer">
+                <div class="customer-avatar avatar-two">L</div>
+                <div>
+                    <strong>Lily</strong>
+                    <span>Happy Customer</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>
+                "Suka banget sama pilihan custom dessert-nya.
+                Bisa pilih topping sesuai selera!"
+            </p>
+
+            <div class="customer">
+                <div class="customer-avatar avatar-three">N</div>
+                <div>
+                    <strong>Neira</strong>
+                    <span>Dessert Enthusiast</span>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+
+<section class="about-section" id="about">
+    <div class="about-content">
+        <span class="eyebrow">A LITTLE ABOUT US</span>
+
+        <h2>Made with Love,<br>
+            <span>Delivered with Care.</span>
+        </h2>
+
+        <p>
+            Manis Lumer hadir untuk menghadirkan kebahagiaan
+            sederhana melalui dessert yang lezat dan berkualitas.
+            Karena kami percaya, hal kecil seperti dessert favorit
+            bisa membuat harimu terasa lebih istimewa.
+        </p>
+
+        <a href="#menu" class="btn-primary">
+            Discover Our Menu →
+        </a>
+    </div>
+
+    <div class="about-features">
+        <div class="feature-card">
+            <span>♡</span>
+            <div>
+                <h3>Made with Love</h3>
+                <p>Setiap dessert dibuat dengan perhatian.</p>
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <span>✿</span>
+            <div>
+                <h3>Fresh Every Day</h3>
+                <p>Mengutamakan kesegaran setiap produk.</p>
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <span>✧</span>
+            <div>
+                <h3>Made for You</h3>
+                <p>Pilihan rasa yang bisa disesuaikan.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= FAQ ================= -->
+
+<section class="faq-section" id="faq">
+
+    <div class="section-heading">
+        <span class="eyebrow">NEED TO KNOW?</span>
+        <h2>Frequently Asked Questions</h2>
+        <p>Beberapa hal yang mungkin ingin kamu ketahui.</p>
+    </div>
+
+
+    <div class="faq-container">
+
+        <details class="faq-item">
+            <summary>Bagaimana cara memesan dessert?</summary>
+            <p>
+                Pilih produk favoritmu, kemudian klik tombol pesan.
+                Kamu akan diarahkan ke WhatsApp untuk melanjutkan
+                pemesanan.
+            </p>
+        </details>
+
+        <details class="faq-item">
+            <summary>Apakah bisa custom dessert?</summary>
+            <p>
+                Tentu! Kamu bisa memilih dasar dessert, rasa,
+                dan topping sesuai selera melalui fitur
+                Racik Dessert-mu Sendiri.
+            </p>
+        </details>
+
+        <details class="faq-item">
+            <summary>Apakah dessert dibuat setiap hari?</summary>
+            <p>
+                Kami mengutamakan kesegaran produk dan
+                menyiapkan dessert sesuai jadwal produksi toko.
+            </p>
+        </details>
+
+        <details class="faq-item">
+            <summary>Bagaimana cara mengetahui harga produk?</summary>
+            <p>
+                Harga produk dapat dilihat pada bagian menu
+                dan promo yang tersedia di website.
+            </p>
+        </details>
+    </div>
+</section>
+
+<section class="cta-section">
+    <div class="cta-decoration">✦</div>
+    <span class="eyebrow">LIFE IS BETTER WITH DESSERT</span>
+    <h2>Something sweet<br>is waiting for you.</h2>
+    <p>Yuk, temukan dessert favoritmu hari ini!</p>
+    <button type="button" class="cta-button" onclick="document.getElementById('myModal1').showModal()">Order Your Happiness →</button>
+</section>
+</main>
+
+<footer class="footer">
+    <div class="footer-main">
+        <div class="footer-brand">
+            <a href="#home" class="logo footer-logo">
+                <span class="logo-icon">✿</span>
+                <span>manis<span class="logo-accent">lumer.</span></span>
+            </a>
+
+            <p>
+                A little sweetness can make
+                a big difference in your day.
+            </p>
+        </div>
+
+        <div class="footer-column">
+            <h3>Explore</h3>
+            <a href="#home">Home</a>
+            <a href="#menu">Our Menu</a>
+            <a href="#promo">Special Promo</a>
+            <a href="#racik">Custom Dessert</a>
+        </div>
+
+        <div class="footer-column">
+            <h3>Information</h3>
+            <a href="#about">About Us</a>
+            <a href="#testimoni">Testimonials</a>
+            <a href="#faq">FAQ</a>
+        </div>
+
+        <div class="footer-column">
+            <h3>Get in Touch</h3>
+            <p>Let's have something sweet!</p>
+            <a href="https://wa.me/6281234567890">WhatsApp Us ↗</a>
+            <a href="https://instagram.com/">Instagram ↗</a>
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+        <p>© 2026 Manis Lumer. Made with ♡ and sweetness.</p>
+        <a href="#home">Back to top ↑</a>
+    </div>
+
+</footer>
+
+</body>
+</html>
